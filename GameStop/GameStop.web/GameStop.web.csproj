@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7D48514E-4678-45AE-8546-91B6D24EDE5E}</ProjectGuid>
+    <ProjectGuid>{D192A7E1-165B-4605-B57C-782FF7114186}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameStop.web</RootNamespace>
-    <AssemblyName>GameStop.web</AssemblyName>
+    <RootNamespace>GameStop.Web</RootNamespace>
+    <AssemblyName>GameStop.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -176,7 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameStop.BL\GameStop.BL.csproj">
-      <Project>{77176be3-b5d8-46bd-826b-914ffc20aff5}</Project>
+      <Project>{b9ed3c00-4120-418e-bcde-949cc19b74a2}</Project>
       <Name>GameStop.BL</Name>
     </ProjectReference>
   </ItemGroup>
@@ -193,9 +193,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53650</DevelopmentServerPort>
+          <DevelopmentServerPort>54440</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53650/</IISUrl>
+          <IISUrl>http://localhost:54440/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

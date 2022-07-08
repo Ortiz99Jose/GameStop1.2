@@ -1,28 +1,26 @@
-﻿@model List<GameStop.BL.Producto>
+﻿
+@model List<GameStop.BL.Producto>
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Productos</h2>
 
-
-<table class="table table-bordered table-hover" >
+<table class=" table table-bordered table-hover">
     <thead>
         <tr>
             <th>
-                Código
+                Codigo 
             </th>
             <th>
-                Descripción
+                Descripcion 
             </th>
             <th>
                 Precio
             </th>
         </tr>
     </thead>
-
-
-
     @foreach (var producto in Model)
     {
         <tr>
@@ -31,5 +29,6 @@
             <td>@producto.Precio</td>
         </tr>
     }
-
+    
+    
 </table>

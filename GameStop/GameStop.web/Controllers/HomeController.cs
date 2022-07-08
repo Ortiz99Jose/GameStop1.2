@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace GameStop.web.Controllers
+namespace GameStop.Web.Controllers
 {
     public class HomeController : Controller
     {
