@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Windows.Forms;
 
 namespace GameStop.WebAdmin.Controllers
 {
@@ -12,11 +11,11 @@ namespace GameStop.WebAdmin.Controllers
         // GET: Login
         public ActionResult Index()
         {
-
             return View();
         }
+
         [HttpPost]
-        public ActionResult Index(System.Web.Mvc.FormCollection data)
+        public ActionResult Index(FormCollection data)
         {
             return RedirectToAction("Index", "Home");
         }

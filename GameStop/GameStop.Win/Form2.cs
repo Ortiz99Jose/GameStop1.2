@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStop.BL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,25 @@ namespace GameStop.Win
 {
     public partial class Form2 : Form
     {
+        ReportedeVentasPorProductoBL _reporteVentasPorProductoBL;
         public Form2()
         {
             InitializeComponent();
+            _reporteVentasPorProductoBL = new ReportedeVentasPorProductoBL();
+
+            RefrescarDatos();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RefrescarDatos();
+        }
+        private void RefrescarDatos()
+        {
+            var listadeVentasPorProducto = _reporteVentasPorProductoBL.ObtenerVentasPorProducto();
+            listadeVentasPorProductoBindingSource.DataSource = listadeVentasPorProducto;
+            listadeVentasPorProductoBindingSource.ResetBindings(false);
+
         }
     }
 }

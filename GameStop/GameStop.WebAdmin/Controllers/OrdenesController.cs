@@ -82,10 +82,12 @@ namespace GameStop.WebAdmin.Controllers
                 }
 
                 _ordenesBL.GuardarOrden(orden);
+
                 return RedirectToAction("Index");
             }
 
-            var clientes = _clientesBL.ObtenerClientesActivos();  
+            var clientes = _clientesBL.ObtenerClientesActivos();
+
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre", orden.ClienteId);
 
             return View(orden);

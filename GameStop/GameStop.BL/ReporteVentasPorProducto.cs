@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameStop.BL
 {
-    class ReporteVentasPorProducto
+    public class ReporteVentasPorProducto
     {
+
         public string Producto { get; set; }
         public int Cantidad { get; set; }
         public double Total { get; set; }
