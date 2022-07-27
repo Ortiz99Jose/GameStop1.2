@@ -49,7 +49,7 @@
             this.dataGridViewTextBoxColumn3});
             this.listadeVentasPorProductoDataGridView.DataSource = this.listadeVentasPorProductoBindingSource;
             this.listadeVentasPorProductoDataGridView.Location = new System.Drawing.Point(31, 52);
-            this.listadeVentasPorProductoDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listadeVentasPorProductoDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.listadeVentasPorProductoDataGridView.Name = "listadeVentasPorProductoDataGridView";
             this.listadeVentasPorProductoDataGridView.RowTemplate.Height = 24;
             this.listadeVentasPorProductoDataGridView.Size = new System.Drawing.Size(342, 219);
@@ -80,7 +80,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(298, 275);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 37);
             this.button1.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(422, 366);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listadeVentasPorProductoDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.listadeVentasPorProductoDataGridView)).EndInit();

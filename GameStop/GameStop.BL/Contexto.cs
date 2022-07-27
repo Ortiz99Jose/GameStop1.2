@@ -19,7 +19,7 @@ namespace GameStop.BL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            
+            Database.SetInitializer(new DatosdeInicio());//inicio de cada aranque
         }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
@@ -27,5 +27,6 @@ namespace GameStop.BL
 
         public DbSet<Orden> Ordenes { get; set; }
         public DbSet<OrdenDetalle> OrdenDetalle { get; set; }
+        public DbSet<Usuario>Usuarios { get; set; }
     }
 }

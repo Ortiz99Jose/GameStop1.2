@@ -7,8 +7,8 @@ using System.Web.Mvc;
 
 namespace GameStop.WebAdmin.Controllers
 {
- 
-        public class OrdenDetalleController : Controller
+    [Authorize]
+    public class OrdenDetalleController : Controller
         {
             OrdenesBL _ordenBL;
             ProductosBL _productosBL;
