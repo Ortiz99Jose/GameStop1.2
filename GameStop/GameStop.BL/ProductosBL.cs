@@ -28,6 +28,7 @@ namespace GameStop.BL
             return ListadeProductos;
         }
         public List<Producto> ObtenerProductosActivos()
+        
         {
             ListadeProductos = _contexto.Productos
                 .Include("Categoria")

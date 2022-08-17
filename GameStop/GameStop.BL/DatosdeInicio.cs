@@ -12,8 +12,8 @@ namespace GameStop.BL
         protected override void Seed(Contexto contexto)
         {
             var nuevoUsuario = new Usuario();
-            nuevoUsuario.Nombre = "Admin";
-            nuevoUsuario.Contrasena = Encriptar.CodificarContrasena("123");
+            nuevoUsuario.Nombre = "admin";
+            nuevoUsuario.Contrasena = Encriptar.CodificarContrasena("1234");
             contexto.Usuarios.Add(nuevoUsuario);
             
             base.Seed(contexto);

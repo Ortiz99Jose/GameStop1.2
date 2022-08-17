@@ -28,5 +28,6 @@ namespace GameStop.BL
         public DbSet<Orden> Ordenes { get; set; }
         public DbSet<OrdenDetalle> OrdenDetalle { get; set; }
         public DbSet<Usuario>Usuarios { get; set; }
+        public DbSet <Bodega> Bodega { get; set; }
     }
 }
